@@ -1,0 +1,105 @@
+\hypertarget{class_board_and_game_1_1_board}{}\section{Board\+And\+Game.\+Board Class Reference}
+\label{class_board_and_game_1_1_board}\index{Board\+And\+Game.\+Board@{Board\+And\+Game.\+Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Board} (int x, int y)\hypertarget{class_board_and_game_1_1_board_a1428f0b186268c8ad2ac05565037ff31}{}\label{class_board_and_game_1_1_board_a1428f0b186268c8ad2ac05565037ff31}
+
+\item 
+boolean {\bfseries no\+Piece\+In\+The\+Middle} (\hyperlink{class_chess_pieces_1_1_location}{Location} start, \hyperlink{class_chess_pieces_1_1_location}{Location} dest)\hypertarget{class_board_and_game_1_1_board_ae89018c37930d36db7dcb78e0bcea6d5}{}\label{class_board_and_game_1_1_board_ae89018c37930d36db7dcb78e0bcea6d5}
+
+\item 
+boolean {\bfseries is\+Inside\+Board} (\hyperlink{class_chess_pieces_1_1_location}{Location} dest)\hypertarget{class_board_and_game_1_1_board_aec226eaa8db092c90b4f2dbfa647565d}{}\label{class_board_and_game_1_1_board_aec226eaa8db092c90b4f2dbfa647565d}
+
+\item 
+boolean {\bfseries capture\+Opponent} (\hyperlink{class_chess_pieces_1_1_location}{Location} start, \hyperlink{class_chess_pieces_1_1_location}{Location} dest)\hypertarget{class_board_and_game_1_1_board_ae7074c4740ef7c9f850c5aa3e8cbdacd}{}\label{class_board_and_game_1_1_board_ae7074c4740ef7c9f850c5aa3e8cbdacd}
+
+\item 
+boolean {\bfseries go\+To} (\hyperlink{class_chess_pieces_1_1_location}{Location} start, \hyperlink{class_chess_pieces_1_1_location}{Location} dest)\hypertarget{class_board_and_game_1_1_board_a2175dfc362422b753bd0f8ec55dd50f4}{}\label{class_board_and_game_1_1_board_a2175dfc362422b753bd0f8ec55dd50f4}
+
+\item 
+boolean {\bfseries check\+Mate} (\hyperlink{enum_chess_pieces_1_1_color}{Color} Opponent\+Color)\hypertarget{class_board_and_game_1_1_board_ad922490ab63ddb125c7eda9487957720}{}\label{class_board_and_game_1_1_board_ad922490ab63ddb125c7eda9487957720}
+
+\item 
+boolean {\bfseries Check\+Blocks\+And\+Kills} (\hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} opponent\+King, Array\+List$<$ \hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} $>$ my\+Pieces, Array\+List$<$ \hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} $>$ opponent\+Pieces)\hypertarget{class_board_and_game_1_1_board_a6e45ab270b5ee8cecd191a3cf380b1e5}{}\label{class_board_and_game_1_1_board_a6e45ab270b5ee8cecd191a3cf380b1e5}
+
+\item 
+boolean {\bfseries in\+Check} (\hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} opponent\+King, Array\+List$<$ \hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} $>$ my\+Pieces, Array\+List$<$ \hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} $>$ opponent\+Pieces)\hypertarget{class_board_and_game_1_1_board_a8446160245d5c189c3875a9511f727ec}{}\label{class_board_and_game_1_1_board_a8446160245d5c189c3875a9511f727ec}
+
+\item 
+boolean \hyperlink{class_board_and_game_1_1_board_aca2ba816fbc7e6281ae9fa5f07f99fe9}{can\+Move\+To} (\hyperlink{class_chess_pieces_1_1_location}{Location} start, \hyperlink{class_chess_pieces_1_1_location}{Location} dest)
+\item 
+boolean {\bfseries can\+Move\+To\+With\+Block} (\hyperlink{class_chess_pieces_1_1_location}{Location} start, \hyperlink{class_chess_pieces_1_1_location}{Location} dest, Array\+List$<$ \hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} $>$ opponent\+Chess)\hypertarget{class_board_and_game_1_1_board_af69f26e31d18896274d8ef21a39488b8}{}\label{class_board_and_game_1_1_board_af69f26e31d18896274d8ef21a39488b8}
+
+\item 
+\hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} {\bfseries get\+Chess\+Piece} (\hyperlink{class_chess_pieces_1_1_location}{Location} location)\hypertarget{class_board_and_game_1_1_board_a9923a7cad02defefd058588120bd45e6}{}\label{class_board_and_game_1_1_board_a9923a7cad02defefd058588120bd45e6}
+
+\item 
+\hyperlink{class_board_and_game_1_1_square}{Square} {\bfseries get\+Square} (\hyperlink{class_chess_pieces_1_1_location}{Location} location)\hypertarget{class_board_and_game_1_1_board_a71e3336b3e67e2aa0833cbb1863651bd}{}\label{class_board_and_game_1_1_board_a71e3336b3e67e2aa0833cbb1863651bd}
+
+\item 
+Array\+List$<$ \hyperlink{class_chess_pieces_1_1_location}{Location} $>$ {\bfseries get\+Location\+Around\+It} (\hyperlink{class_chess_pieces_1_1_location}{Location} location)\hypertarget{class_board_and_game_1_1_board_affb2904486fde6fff180ac997e01f1cd}{}\label{class_board_and_game_1_1_board_affb2904486fde6fff180ac997e01f1cd}
+
+\item 
+Array\+List$<$ \hyperlink{class_chess_pieces_1_1_location}{Location} $>$ {\bfseries get\+Location\+In\+The\+Middle} (\hyperlink{class_chess_pieces_1_1_location}{Location} start, \hyperlink{class_chess_pieces_1_1_location}{Location} dest)\hypertarget{class_board_and_game_1_1_board_a85ec1c66d5c24efc1b829ea56fb91ccd}{}\label{class_board_and_game_1_1_board_a85ec1c66d5c24efc1b829ea56fb91ccd}
+
+\item 
+void {\bfseries test\+Go\+To} (\hyperlink{class_chess_pieces_1_1_location}{Location} start, \hyperlink{class_chess_pieces_1_1_location}{Location} dest)\hypertarget{class_board_and_game_1_1_board_a381092c0a3eb63365acaad6098ad3adc}{}\label{class_board_and_game_1_1_board_a381092c0a3eb63365acaad6098ad3adc}
+
+\item 
+void {\bfseries test\+Delete} (\hyperlink{class_chess_pieces_1_1_location}{Location} a)\hypertarget{class_board_and_game_1_1_board_a73bea789be1ef022a3bdde4dfec45abc}{}\label{class_board_and_game_1_1_board_a73bea789be1ef022a3bdde4dfec45abc}
+
+\item 
+Array\+List$<$ \hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} $>$ {\bfseries test\+Get\+White\+Pieces} ()\hypertarget{class_board_and_game_1_1_board_a9a9d62c6cb54db0900fb4fdbf9631730}{}\label{class_board_and_game_1_1_board_a9a9d62c6cb54db0900fb4fdbf9631730}
+
+\item 
+Array\+List$<$ \hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} $>$ {\bfseries test\+Get\+Black\+Pieces} ()\hypertarget{class_board_and_game_1_1_board_ace2944e1ea40b215d62ffc8572ef9c0b}{}\label{class_board_and_game_1_1_board_ace2944e1ea40b215d62ffc8572ef9c0b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board_and_game_1_1_square}{Square}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries squares}\hypertarget{class_board_and_game_1_1_board_adf1bbfe988dc243bb6989ae574ee8c2c}{}\label{class_board_and_game_1_1_board_adf1bbfe988dc243bb6989ae574ee8c2c}
+
+\item 
+int {\bfseries column}\hypertarget{class_board_and_game_1_1_board_adb554a7959da1c68ee659ad4b9a87bef}{}\label{class_board_and_game_1_1_board_adb554a7959da1c68ee659ad4b9a87bef}
+
+\item 
+int {\bfseries row}\hypertarget{class_board_and_game_1_1_board_a1a812ca2e5aba395e1da106f8a3506d7}{}\label{class_board_and_game_1_1_board_a1a812ca2e5aba395e1da106f8a3506d7}
+
+\item 
+Array\+List$<$ \hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} $>$ {\bfseries white\+Pieces}\hypertarget{class_board_and_game_1_1_board_a8fc6425a96cb7bfb711557557e606db1}{}\label{class_board_and_game_1_1_board_a8fc6425a96cb7bfb711557557e606db1}
+
+\item 
+Array\+List$<$ \hyperlink{class_chess_pieces_1_1_chess_piece}{Chess\+Piece} $>$ {\bfseries black\+Pieces}\hypertarget{class_board_and_game_1_1_board_a227b297e707f685da921b58ecf60d509}{}\label{class_board_and_game_1_1_board_a227b297e707f685da921b58ecf60d509}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by Blaks on 1/29/16. 
+
+\subsection{Member Function Documentation}
+\index{Board\+And\+Game\+::\+Board@{Board\+And\+Game\+::\+Board}!can\+Move\+To@{can\+Move\+To}}
+\index{can\+Move\+To@{can\+Move\+To}!Board\+And\+Game\+::\+Board@{Board\+And\+Game\+::\+Board}}
+\subsubsection[{\texorpdfstring{can\+Move\+To(\+Location start, Location dest)}{canMoveTo(Location start, Location dest)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Board\+And\+Game.\+Board.\+can\+Move\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf Location}}]{start, }
+\item[{{\bf Location}}]{dest}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_and_game_1_1_board_aca2ba816fbc7e6281ae9fa5f07f99fe9}{}\label{class_board_and_game_1_1_board_aca2ba816fbc7e6281ae9fa5f07f99fe9}
+this function checks whether a piece on a place can move to another place 
+\begin{DoxyParams}{Parameters}
+{\em start} & \\
+\hline
+{\em dest} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Board\+And\+Game/Board.\+java\end{DoxyCompactItemize}
